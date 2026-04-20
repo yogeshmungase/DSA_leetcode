@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class BestTimeToBuyStock {
     public static int maxProfit(int[] prices) {
         int profit = 0;
-        int  max =0;
+        int  max = 0;
         for(int i = 0; i< prices.length; i++){
             for(int j = i+1; j < prices.length; j++){ // time complexity = o(n^2)
                 if(prices[i] < prices[j]){
